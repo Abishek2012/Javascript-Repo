@@ -42,3 +42,39 @@ const myFunction = function(){
 console.log(typeof heroes);
 console.log(typeof id);
 
+
+
+
+
+// Stack(Primitive Datatype), Heap(Reference Type)
+
+// Stack
+
+let youtubeName = "Abishek"
+let anotherName = youtubeName
+
+ anotherName = "Pappulal"
+
+console.log(youtubeName);
+console.log(anotherName);
+
+
+
+// Heap
+let userOne = {
+    user : "Abishek",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.user = "Pappu"
+
+console.log(userOne.user);
+console.log(userTwo.user);
+
+
+
+
+
+
+
