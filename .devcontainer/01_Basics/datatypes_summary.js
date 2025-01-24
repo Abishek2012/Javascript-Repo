@@ -24,3 +24,21 @@ console.log(id !== anotherId);
 // Reference Type (Non Primitive)
 
 // Array, Objects, Functions
+
+const heroes = ["superman", "Batman", "Spiderman", "Hulk"]  // ----->Array Decalaration
+let myObj = {                           //   Object declaration
+    name : "Abishek",                   //
+    age : "22"                          //
+} 
+
+
+const myFunction = function(){
+          console.log("Hello World");
+          
+}
+
+
+
+console.log(typeof heroes);
+console.log(typeof id);
+
