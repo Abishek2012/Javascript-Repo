@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abishek</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+       <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langname){
+        const li = document.createElement('li')
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("typescript")
+
+
+
+    function addOptiLang (langName){
+       const li = document.createElement('li')
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLang("C++")
+
+    // edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    // edit
+
+    const secondlang =  document.querySelector("li:first-child")
+    secondlang.outerHTML = '<li>Ruby</li>'
+
+    
+
+</script>
+</html>
