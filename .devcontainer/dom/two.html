@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+    <script>
+        const sayAbishek = function(){
+            console.log("Hello Abishek");
+            
+        } 
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = 'Best JS Course'
+
+        }
+        setTimeout(sayAbishek, 2000)
+        const changeMe = setTimeout(changeText, 2000)
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeMe)
+            console.log("stop");
+            
+        })
+
+
+
+        const sayDate = function(){
+            console.log("Abishek", Date.now());
+            
+     }
+        const stopInterval = setInterval(sayDate, 1000, "hi")
+        clearInterval(stopInterval)
+        
+    </script>
+</body>
+
+<!--<script>
+
+</script>-->
+</html>
