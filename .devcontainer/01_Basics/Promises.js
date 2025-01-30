@@ -63,7 +63,7 @@ const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true 
         if(!error) {
-            resolve({username:"ABishek", class : "Seventh"})
+            resolve({username:"Abishek", class : "Seventh"})
         } else {
             reject({username : "Pappu" , class : "demoted to sixth"})
         }
